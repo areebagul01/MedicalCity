@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+.header{
+    min-height: 100vh; /* viewport height */
+    width: 100%;
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    
+}
+nav{
+    display: flex; /* Logo aur menu ko aik line me lane ke leay */
+    padding: 0.8% 6%;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #4575bd;
+    
+}
+nav image{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;  /* straight line */ 
+    padding: 8px 12px;
+    position: revative; /*relative for normal position*/
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Open Sans,sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 20px;
+    padding: 10px 8px 10px 16px;
+}
+.text-box{
+    width:90%;  
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 16px;
+    color:white;
+    font-size: 18px;
+}
+.hero-btn{
+    display: inline-block;
+    /* text-decoration: none; */
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor:pointer; /*  mouse pointer */
+}
+
+.red-btn{
+    border: 1px solid #c10f0f;
+    background: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+}
+
+.hero-btn:hover{
+    border: 1px solid #c10f0f;
+    background: #c10f0f;
+    transition: 1s;
+    color: white;
+}
+
+
+
+
+/*-----Departments-----*/
+.departments{
+    width: 80%;
+    margin: auto;    
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;       /*to semi-bold the text*/
+    color: #c10f0f;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;      /*distance btw uper lower line*/ 
+    padding: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+ 
+}
+
+.row{
+    margin-top:5%;
+    display: flex;      
+    justify-content: space-between;
+}
+.departments-col{
+    flex-basis: 29%;        /*like lenght*/
+    background: #3065b5;
+    border-radius: 20px;        /*to round the border*/
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    /* border-radius: border-box;   */
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: white;
+}
+
+/*-----Branches-----*/
+.branches{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.branches-col{
+    flex-basis: 30%;        
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;       
+}
+
+.branches-col h3{
+    color: #3065b5;
+}
+
+.branches-col img{
+    width: 100%;
+}
+
+/*-----Consultants-----*/
+.doctors{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.doctors-col{
+    flex-basis: 29%;        
+    background: #3065b5;
+    border-radius: 10px;        /*to round the border*/
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    /* border-radius: border-box;       */
+}
+
+/*-----Footer-----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #2f2727;
+}
+.footer h4{
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 19px;
+    color: white;
+}
+.footer p{
+    color: #90969a;
+}
+.icons .fa{                
+    color: rgb(255, 255, 255);
+    margin: 0 13px;
+    cursor: pointer;        
+    padding: 18px 0;
+    
+}
+.fa-heart-o{
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*-----About us page-----*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    /* color: white; */
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%; 
+    padding: 30px 2px;
+    
+}
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.contact-col img{ 
+    width: 90%;
+}
+
+.contact{
+    margin-bottom: 60px;
+}
+
+.contact-col input,.contact-col textarea{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 17px;
+    /* outline: none;       */
+    border: 1px solid #3065b5;
+}
